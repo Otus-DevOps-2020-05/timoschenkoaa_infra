@@ -4,8 +4,8 @@ timoschenkoaa Infra repository
 ДЗ №3 Запуск VM в YC\
 Задание
 
-bastion_IP = 84.201.135.97 \
-someinternalhost_IP = 10.130.0.16
+bastion_IP = 84.201.173.21 \
+someinternalhost_IP = 10.130.0.22
 
 Самостоятельное задание
 
