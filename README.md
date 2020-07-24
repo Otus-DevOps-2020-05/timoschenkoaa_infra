@@ -29,7 +29,7 @@ Host someinternalhost
 
 HW №4
 
-testapp_IP = 178.154.247.74
+testapp_IP = 130.193.37.121
 testapp_port = 9292
 
 Дополнительное задание
@@ -39,8 +39,8 @@ yc compute instance create \
 --name reddit-app \
 --hostname reddit-app \
 --memory=4 \
---create-boot-disk image-folder-id=b1ga0cmqqghggdje2gi1,image-family=reddit-full,size=20GB \
+--create-boot-disk image-folder-id=standard-images,image-family=ubuntu-1604-lts,size=20GB \
 --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
 --metadata serial-port-enable=1 \
 --metadata-from-file user-data=metadata.yaml \
---ssh-key ~/.ssh/appuser.pub
+#--ssh-key ~/.ssh/appuser.pub
