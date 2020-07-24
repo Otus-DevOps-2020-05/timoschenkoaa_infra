@@ -36,8 +36,8 @@ testapp_port = 9292
 Добавлен metadata.yaml для конфигурации ВМ во время создания:
 
 yc compute instance create \
---name "$1" \
---hostname "$1" \
+--name reddit-app \
+--hostname reddit-app \
 --memory=4 \
 --create-boot-disk image-folder-id=b1ga0cmqqghggdje2gi1,image-family=reddit-full,size=20GB \
 --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
