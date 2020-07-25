@@ -1,7 +1,7 @@
 ﻿# timoschenkoaa_infra
 timoschenkoaa Infra repository
 
-ДЗ №3 Запуск VM в YC
+HW №3 Запуск VM в YC
 Задание
 
 bastion_IP = 84.201.173.21
@@ -24,3 +24,21 @@ Host someinternalhost
 Дополнительное задание с сертификатом
 Сертификат обновлен для:
  https://84.201.173.21.sslip.io
+
+HW №4
+
+testapp_IP = 130.193.37.121
+testapp_port = 9292
+
+Дополнительное задание
+Добавлен metadata.yaml для конфигурации ВМ во время создания:
+
+yc compute instance create \
+--name reddit-app \
+--hostname reddit-app \
+--memory=4 \
+--create-boot-disk image-folder-id=standard-images,image-family=ubuntu-1604-lts,size=20GB \
+--network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
+--metadata serial-port-enable=1 \
+--metadata-from-file user-data=metadata.yaml \
+#--ssh-key ~/.ssh/appuser.pub
