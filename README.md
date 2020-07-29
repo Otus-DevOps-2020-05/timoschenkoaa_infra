@@ -49,5 +49,5 @@ HW №7
 Создан конфигурационный файл 'bake' образа, включающий все зависимости приложения и сам код приложения
 # packer/immutable.json
 packer/variables.json - переменные для обоих шаблонов (.gitignore)
-packer/files/deploy_reddit-vm.sh - скрипт для установки reddit
+packer/files/install_puma.sh - скрипт инициализации puma
 config-scripts/create_reddit.sh - скрипт создания ВМ из образа (с предустановленными ruby и mongodb)
