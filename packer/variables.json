@@ -1,6 +1,0 @@
-{
-    "service_account_key_file":"/home/alexander/service-keys/yc-packer.json",
-    "folder_id":"b1ga0cmqqghggdje2gi1",
-    "image_name":"reddit-full-{{timestamp}}",
-    "platform_id":"standard-v1" 
-}
