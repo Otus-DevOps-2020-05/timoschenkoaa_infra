@@ -1,7 +1,7 @@
 ﻿# timoschenkoaa_infra
 timoschenkoaa Infra repository
 
-HW №3 Запуск VM в YC
+HW №5 Запуск VM в YC
 Задание
 
 bastion_IP = 84.201.173.21
@@ -25,7 +25,7 @@ Host someinternalhost
 Сертификат обновлен для:
  https://84.201.173.21.sslip.io
 
-HW №4
+HW №6
 
 testapp_IP = 130.193.37.121
 testapp_port = 9292
@@ -42,3 +42,12 @@ yc compute instance create \
 --metadata serial-port-enable=1 \
 --metadata-from-file user-data=metadata.yaml \
 #--ssh-key ~/.ssh/appuser.pub
+
+HW №7
+Создан конфигурационный файл для создания образа ВМ с предустановленными ruby и mongodb
+# packer/ubuntu16.json 
+Создан конфигурационный файл 'bake' образа, включающий все зависимости приложения и сам код приложения
+# packer/immutable.json
+packer/variables.json - переменные для обоих шаблонов (.gitignore)
+packer/files/deploy_reddit-vm.sh - скрипт для установки reddit
+config-scripts/create_reddit.sh - скрипт создания ВМ из образа (с предустановленными ruby и mongodb)
