@@ -1,0 +1,6 @@
+{
+    "service_account_key_file":"key.json",
+    "folder_id":"xxxa0cmqqghggdjxxx1",
+    "image_name":"reddit-base-{{timestamp}}",
+    "platform_id":"standard-v1" 
+}
